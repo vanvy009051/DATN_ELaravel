@@ -1,5 +1,5 @@
 @extends('frontend.master')
-@section('title','Checkout' )
+@section('title','Thanh Toán - Electro' )
 @section('main')
 <!-- NAVIGATION -->
 <nav id="navigation">

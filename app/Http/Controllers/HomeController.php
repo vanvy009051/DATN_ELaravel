@@ -17,6 +17,11 @@ class HomeController extends Controller
         return view('frontend.login');
     }
 
+    public function signup()
+    {
+        return view('frontend.signup');
+    }
+
     public function contact()
     {
         return view('frontend.contact');
@@ -25,5 +30,10 @@ class HomeController extends Controller
     public function checkout()
     {
         return view('frontend.checkout');
+    }
+
+    public function shop()
+    {
+        return view('frontend.store');
     }
 }

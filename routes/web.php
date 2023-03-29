@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 // Frontend routes
 Route::get('/', 'HomeController@index');
 Route::get('/login', 'HomeController@login');
+Route::get('/sign-up', 'HomeController@signup');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/checkout', 'HomeController@checkout');
+Route::get('/shop', 'HomeController@shop');
 
 
 // Backend routes

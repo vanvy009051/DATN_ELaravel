@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Đăng Nhập - Electro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{('./public/frontend/electro-master/css/login.css')}}">
 </head>
@@ -47,7 +47,7 @@
         <div class="column">
             <h2>Welcome to Codeminton</h2>
             <p>If you don't have an account, would you like to register right now?</p>
-            <a href="#">Sign Up</a>
+            <a href="/DATN_ELaravel/sign-up">Sign Up</a>
         </div>
     </div>
 </body>
