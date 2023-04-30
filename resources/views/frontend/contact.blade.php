@@ -3,7 +3,6 @@
 @section('main')
 
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-<link rel="stylesheet" href="{{('./public/frontend/electro-master/css/contact.css')}}">
 <section class="contact">
     <div class="content">
         <h2>Contact Us</h2>
@@ -14,7 +13,8 @@
     <div class="container">
         <div class="contact-info">
             <div class="box">
-                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
                 <div class="text">
                     <h3>Address</h3>
                     <p>245 Le Thanh Nghi, Hoa Cuong, <br>Hai Chau, Da Nang, <br>550000</p>
@@ -57,4 +57,5 @@
         </div>
     </div>
 </section>
+
 @endsection

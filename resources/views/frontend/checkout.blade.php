@@ -263,4 +263,4 @@
     <!-- /container -->
 </div>
 <!-- /NEWSLETTER -->
-@stop
+@endsection

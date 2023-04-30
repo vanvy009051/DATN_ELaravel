@@ -13,7 +13,7 @@
     <div class="container sign-up-mode">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form">
+                <!-- <form action="#" class="sign-in-form">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -39,23 +39,36 @@
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
-                </form>
-                <form action="#" class="sign-up-form">
+                </form> -->
+                <form role="form" action="{{URL::to('/user-sign-up')}}" method="POST">
                     <h2 class="title">Sign up</h2>
+                    {{ csrf_field() }}
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" name="user_name" placeholder="Fullname" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" name="user_email" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" name="user_address" placeholder="Address" required />
+                    </div>
+                    <!-- <div class="input-field" style="display:none;">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" name="user_role" placeholder="Role id" required />
+                    </div> -->
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="user_password" placeholder="Password" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="password" name="user_cpassword" placeholder="Confirm password" required />
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
+                    <button type="submit" name="user_sign_up" class="btn">Sign up</button>
+                    <!-- <p class="social-text">Or Sign up with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
@@ -69,7 +82,7 @@
                         <a href="#" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -79,8 +92,7 @@
                 <div class="content">
                     <h3>New here ?</h3>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                        ex ratione. Aliquid!
+                        If you already have an account, sign in right now?
                     </p>
                     <button class="btn transparent" id="sign-up-btn">
                         Sign up
@@ -92,11 +104,10 @@
                 <div class="content">
                     <h3>One of us ?</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                        laboriosam ad deleniti.
+                        If you already have an account, sign in right now?
                     </p>
-                    <a href="/DATN_ELaravel/login" class="btn-link transparent" id="sign-in-btn">
-                        Log in
+                    <a href="{{URL::to('/login')}}" class="btn-link transparent" id="sign-in-btn">
+                        Sign in
                     </a>
                 </div>
                 <img src="img/register.svg" class="image" alt="" />

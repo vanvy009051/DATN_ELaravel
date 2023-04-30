@@ -1,5 +1,5 @@
 @extends('frontend.master')
-@section('title', 'Shop - Electro')
+@section('title', 'Shop')
 @section('main')
 
 <!-- NAVIGATION -->
